@@ -1,0 +1,6 @@
+framework module Pods_BeerChat {
+  umbrella header "Pods-BeerChat-umbrella.h"
+
+  export *
+  module * { export * }
+}
