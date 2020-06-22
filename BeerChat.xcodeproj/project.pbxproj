@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,8 +16,9 @@
 		0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62818C235DF00B00E35CAF /* RegisterViewController.swift */; };
 		0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62818E235DF01000E35CAF /* LoginViewController.swift */; };
 		0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B628190235DF01B00E35CAF /* ChatViewController.swift */; };
+		42AAC13524A121B500135E4F /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C6E6BA249FFFD600C70093 /* MessageCell.xib */; };
+		42AAC13824A1476500135E4F /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42AAC13724A1476500135E4F /* IQKeyboardManagerSwift */; };
 		42C6E6BB249FFFD600C70093 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C6E6B9249FFFD600C70093 /* MessageCell.swift */; };
-		42C6E6BC249FFFD600C70093 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C6E6BA249FFFD600C70093 /* MessageCell.xib */; };
 		42E7D276249F9CCC0099F6A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42E7D275249F9CCC0099F6A3 /* GoogleService-Info.plist */; };
 		42E7D27A249FC2CF0099F6A3 /* BeerChat.xcodeproj in Sources */ = {isa = PBXBuildFile; fileRef = 42E7D279249FC2CF0099F6A3 /* BeerChat.xcodeproj */; };
 		42E7D284249FC3510099F6A3 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E7D283249FC3510099F6A3 /* Message.swift */; };
@@ -54,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60A87A55038E7E83EB6D46B8 /* Pods_BeerChat.framework in Frameworks */,
+				42AAC13824A1476500135E4F /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +168,9 @@
 			dependencies = (
 			);
 			name = BeerChat;
+			packageProductDependencies = (
+				42AAC13724A1476500135E4F /* IQKeyboardManagerSwift */,
+			);
 			productName = "Flash Chat iOS13";
 			productReference = 0B628173235DEE8100E35CAF /* BeerChat.app */;
 			productType = "com.apple.product-type.application";
@@ -194,6 +199,9 @@
 				Base,
 			);
 			mainGroup = 0B62816A235DEE8100E35CAF;
+			packageReferences = (
+				42AAC13624A1476500135E4F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 0B628174235DEE8100E35CAF /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -214,7 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42C6E6BC249FFFD600C70093 /* MessageCell.xib in Resources */,
+				42AAC13524A121B500135E4F /* MessageCell.xib in Resources */,
 				0B628183235DEE8400E35CAF /* LaunchScreen.storyboard in Resources */,
 				42E7D276249F9CCC0099F6A3 /* GoogleService-Info.plist in Resources */,
 				0B628180235DEE8400E35CAF /* Assets.xcassets in Resources */,
@@ -479,6 +487,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42AAC13624A1476500135E4F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42AAC13724A1476500135E4F /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42AAC13624A1476500135E4F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0B62816B235DEE8100E35CAF /* Project object */;
 }
